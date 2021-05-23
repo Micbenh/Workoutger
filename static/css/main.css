@@ -1,0 +1,245 @@
+@-webkit-keyframes hero-content-background {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #41ACFA;
+  }
+}
+
+@keyframes hero-content-background {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #41ACFA;
+  }
+}
+
+@-webkit-keyframes headline {
+  0% {
+    top: 50%;
+    left: 48%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  50% {
+    top: 50%;
+    left: 52%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 50%;
+    left: 48%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes headline {
+  0% {
+    top: 50%;
+    left: 48%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  50% {
+    top: 50%;
+    left: 52%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  100% {
+    top: 50%;
+    left: 48%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+@-webkit-keyframes quote-owner-display {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes quote-owner-display {
+  from {
+    left: -200px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+@-webkit-keyframes logo-entry {
+  from {
+    right: 40%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    right: 30%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes logo-entry {
+  from {
+    right: 40%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    right: 30%;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-container {
+  background-color: #43AFFE;
+}
+
+.nav-container a {
+  color: white;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2em;
+}
+
+header nav ul a {
+  display: block;
+  padding: 0em 2em;
+}
+
+.hero {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% auto;
+      grid-template-columns: 60% auto;
+}
+
+.hero-container {
+  height: 70vh;
+  background-color: chartreuse;
+  background: unset;
+  place-items: center;
+  text-align: center;
+}
+
+.hero-container .headline {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.hero-container .quote {
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  top: 67%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0px;
+  margin: 0px;
+}
+
+.hero-container .quote .quote-owner {
+  padding: 0px;
+  margin: 0px;
+}
+
+.content {
+  position: relative;
+  background-color: #41ACFA;
+  height: 100%;
+  width: 100%;
+  -webkit-animation-name: hero-content-background;
+          animation-name: hero-content-background;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+.pitch {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation-name: headline;
+          animation-name: headline;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.logoimage {
+  position: relative;
+}
+
+.logoimage img {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  top: 160px;
+  right: 30%;
+  -webkit-animation-name: logo-entry;
+          animation-name: logo-entry;
+  -webkit-animation-duration: 2.8s;
+          animation-duration: 2.8s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+/*# sourceMappingURL=main.css.map */

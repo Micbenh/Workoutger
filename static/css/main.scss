@@ -1,0 +1,145 @@
+@keyframes hero-content-background {
+    from {background-color: white;}
+    to {background-color:#41ACFA ;}
+}
+
+@keyframes headline{
+    0% {top:50%; left:48%;transform: translate(-50%, -50%);}
+    50% {top:50%; left:52%;transform: translate(-50%, -50%);}
+    100% {top:50%; left:48%;transform: translate(-50%, -50%);}
+
+}
+
+@keyframes quote-owner-display{
+    from {left:-200px;}
+    to  {left:0px;}
+
+}
+
+@keyframes logo-entry {
+    from {right:40%; opacity:0; visibility: hidden;}
+    to {right:30%; opacity:1;  visibility: visible;}
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container {
+    background-color:#43AFFE;
+    a {
+        color:white;
+    }
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+
+    nav{
+        float:right;
+
+        ul{
+            display:flex;
+            padding:2em;
+
+            a {
+                display:block;
+                padding: 0em 2em;
+            }
+
+
+        }
+    }
+}
+
+.hero {
+    display:grid;
+    grid-template-columns: 60% auto; 
+}
+.hero-container {
+
+    height:70vh;
+    background-color:chartreuse;
+    background:unset;
+    place-items:center;
+    text-align:center;
+        .headline {
+            display:grid;
+            position:relative;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+        .quote {
+            position:absolute;
+            display:grid;
+            top:67%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            padding:0px;
+            margin: 0px;
+            .quote-owner {
+                padding:0px;
+                margin: 0px;
+            }
+
+            
+
+        }
+}
+
+.content {
+    position:relative;
+    background-color: #41ACFA;
+    height:100%;
+    width:100%;
+    animation-name: hero-content-background;
+    animation-duration: 1.5s;
+}
+.pitch {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    animation-name: headline;
+    animation-duration: 12s;
+    animation-delay: 1.8s;
+    animation-iteration-count: infinite;
+
+    
+}
+.logoimage {
+    position:relative;
+}
+.logoimage {
+    img { 
+        position: absolute;
+        width: 600px;
+        height: 300px;
+        top:160px;
+        right:30%;
+        animation-name:logo-entry;
+        animation-duration:2.8s;
+        //animation-delay:1.5s;
+        animation-timing-function: ease-out;
+
+    }
+}
